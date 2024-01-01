@@ -45,10 +45,19 @@ relevant stakeholders and their expectations "
 
 </div>
 
-Short description of the functional requirements, driving forces,
+"Short description of the functional requirements, driving forces,
 extract (or abstract) of requirements. Link to (hopefully existing)
 requirements documents (with version number and information where to
-find it).
+find it)."
+
+The functional requirements for PictShare, based on the BRD and presentations, can be summarized as follows:
+
+* User Profiles: Ability for users to create and manage personal profiles, connect with others, and curate collections of images.
+* Image Sharing: Feature to share images with the community, including tagging and social media integration.
+* Advanced Editing Tools: A range of editing capabilities like color correction, white balance, and exposure adjustments.
+* Customizable Filters: Options for users to create and save custom filters and select from pre-existing ones.
+* Community Engagement: Community-driven features such as challenges, competitions, and a social feed.
+
 
 <div class="formalpara-title">
 
