@@ -289,10 +289,12 @@ documentation.
 
 </div>
 
-Specification of **all** communication partners (users, IT-systems, …)
+"Specification of **all** communication partners (users, IT-systems, …)
 with explanations of domain specific inputs and outputs or interfaces.
 Optionally you can add domain specific formats or communication
-protocols.
+protocols."
+
+PictShare interacts with users and various IT systems for its operations. Users provide image content and interact through the app. Payment services process subscriptions and purchases. Location services enhance user experience with geotagging. The marketing email system facilitates promotional communication. Data storage is managed by the hosting partner.
 
 <div class="formalpara-title">
 
@@ -300,8 +302,9 @@ protocols.
 
 </div>
 
-All stakeholders should understand which data are exchanged with the
-environment of the system.
+"All stakeholders should understand which data are exchanged with the
+environment of the system."
+To ensure clarity among stakeholders regarding the flow of information and the system's integration with external services, which is essential for operational success and user satisfaction.
 
 <div class="formalpara-title">
 
@@ -309,16 +312,26 @@ environment of the system.
 
 </div>
 
-All kinds of diagrams that show the system as a black box and specify
+"All kinds of diagrams that show the system as a black box and specify
 the domain interfaces to communication partners.
 
 Alternatively (or additionally) you can use a table. The title of the
 table is the name of your system, the three columns contain the name of
 the communication partner, the inputs, and the outputs.
-
 **\<Diagram or Table>**
 
-**\<optionally: Explanation of external domain interfaces>**
+**\<optionally: Explanation of external domain interfaces>**"
+
+| Communication Partner | Inputs from PictShare               | Outputs to PictShare              |
+|-----------------------|-------------------------------------|-----------------------------------|
+| Users                 | Image uploads, profile information  | Edited images, notifications      |
+| Payment Service       | Subscription and purchase details   | Payment confirmations             |
+| Location Service      | Image data for geotagging           | Location data for images          |
+| Email Service         | Parameters for marketing emails     | Confirmation of email delivery    |
+| Hosting Partner       | Requests for data storage           | Access to stored user data        |
+
+
+
 
 ## Technical Context
 
