@@ -182,8 +182,13 @@ Photography Expert	Lucas Rodriguez	High image quality and creative tools
 
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
-| *\<Role-1>* | *\<Contact-1>* | *\<Expectation-1>* |
-| *\<Role-2>* | *\<Contact-2>* | *\<Expectation-2>* |
+| *\<Marketing Manager>* | *\<Sarah Chen>* | *\<Brand visibility and user base growth>* |
+| *\<Project Manager>* | *\<Michael Nguyen>* | *\<Timely delivery and system stability>* |
+| *\<Lead Developer>* | *\<Ava Patel>* | *\<Technical excellence and maintainability>* |
+| *\<UX/UI Designer>* | *\<Emily Wong>* | *\<Aesthetic appeal and user-friendly design>* |
+| *\<User Representative>* | *\<Samir Singh>* | *\<Community engagement and content richness>* |
+| *\<Photography Expert>* | *\<Lucas Rodriguez>* | *\<High image quality and creative tools>* |
+
 
 <div style="page-break-after: always;"></div>
 
@@ -199,6 +204,10 @@ Any requirement that constraints software architects in their freedom of
 design and implementation decisions or decision about the development
 process. These constraints sometimes go beyond individual systems and
 are valid for whole organizations and companies.
+
+* Technical Constraints: Must integrate with Pixlr API without compromising performance.
+* Organizational Constraints: The development process must align with the Agile methodology.
+* Conventions: Adhere to company-wide coding and documentation standards.
 
 <div class="formalpara-title">
 
