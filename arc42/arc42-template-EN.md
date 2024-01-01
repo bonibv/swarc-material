@@ -205,9 +205,10 @@ design and implementation decisions or decision about the development
 process. These constraints sometimes go beyond individual systems and
 are valid for whole organizations and companies.
 
-* Technical Constraints: Must integrate with Pixlr API without compromising performance.
-* Organizational Constraints: The development process must align with the Agile methodology.
-* Conventions: Adhere to company-wide coding and documentation standards.
+* Security concerns: Security is a paramount concern, especially in microservices and mobile development. Architects must adhere to security constraints such as authentication, authorization, encryption, and protection against common security vulnerabilities when designing API Gateway patterns. These constraints limit design freedom to prioritize security.
+* Interoperability constraints: Cross-platform mobile development often involves multiple platforms (iOS, Android, web). Architects need to ensure that the API Gateway provides consistent and compatible interfaces for different client platforms. This can limit the choice of technologies and APIs used in the development process to ensure seamless interoperability.
+* Versioning and Compatibility Constraints: As systems evolve, architects need to maintain backward compatibility to avoid breaking existing clients. This constraint may limit the freedom to make drastic changes in the API or microservices without providing appropriate versioning and migration strategies
+* Regulatory and Compliance Constraints: Many industries have specific regulations and compliance requirements (e.g., GDPR). Architects must consider these constraints when designing API Gateway patterns for microservices. Compliance with these rules may necessitate data handling, auditing, and reporting features that could impact architectural choices.
 
 <div class="formalpara-title">
 
@@ -243,13 +244,15 @@ arc42 documentation.
 
 </div>
 
-System scope and context - as the name suggests - delimits your system
+"System scope and context - as the name suggests - delimits your system
 (i.e. your scope) from all its communication partners (neighboring
 systems and users, i.e. the context of your system). It thereby
 specifies the external interfaces.
 
 If necessary, differentiate the business context (domain specific inputs
-and outputs) from the technical context (channels, protocols, hardware).
+and outputs) from the technical context (channels, protocols, hardware)."
+
+The PictShare system enables users to upload, edit, and share images. It interacts with external editing tools like Pixlr and social media platforms for sharing, delineating the system's scope. The business context involves user engagement and content distribution, while the technical context covers the APIs, protocols, and hardware necessary for image processing and data storage.
 
 <div class="formalpara-title">
 
@@ -257,9 +260,11 @@ and outputs) from the technical context (channels, protocols, hardware).
 
 </div>
 
-The domain interfaces and technical interfaces to communication partners
+"The domain interfaces and technical interfaces to communication partners
 are among your system’s most critical aspects. Make sure that you
-completely understand them.
+completely understand them."
+
+Understanding the interfaces with Pixlr for image editing and platforms like Instagram for sharing is critical, as they directly affect the user experience and the performance of the PictShare system.
 
 <div class="formalpara-title">
 
