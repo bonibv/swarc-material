@@ -341,10 +341,12 @@ the communication partner, the inputs, and the outputs.
 
 </div>
 
-Technical interfaces (channels and transmission media) linking your
+"Technical interfaces (channels and transmission media) linking your
 system to its environment. In addition a mapping of domain specific
 input/output to the channels, i.e. an explanation which I/O uses which
-channel.
+channel."
+
+The technical context of PictShare includes HTTPS for secure communication with user devices, RESTful API interactions with Pixlr for image editing, and OAuth for secure authorization with social media platforms. The system uses SQL over JDBC for database transactions to store user data and image metadata.
 
 <div class="formalpara-title">
 
@@ -352,9 +354,13 @@ channel.
 
 </div>
 
-Many stakeholders make architectural decision based on the technical
+"Many stakeholders make architectural decision based on the technical
 interfaces between the system and its context. Especially infrastructure
-or hardware designers decide these technical interfaces.
+or hardware designers decide these technical interfaces."
+
+These technical interfaces are crucial for ensuring the secure and efficient operation of PictShare. They are of particular interest to infrastructure architects and are fundamental to the system's ability to interact with its technical environment.
+
+Form:
 
 <div class="formalpara-title">
 
@@ -362,7 +368,7 @@ or hardware designers decide these technical interfaces.
 
 </div>
 
-E.g. UML deployment diagram describing channels to neighboring systems,
+"E.g. UML deployment diagram describing channels to neighboring systems,
 together with a mapping table showing the relationships between channels
 and input/output.
 
@@ -370,7 +376,15 @@ and input/output.
 
 **\<optionally: Explanation of technical interfaces>**
 
-**\<Mapping Input/Output to Channels>**
+**\<Mapping Input/Output to Channels>**"
+
+| Domain Interface | Technical Channel | Protocol |
+| ---------------- | ----------------- | -------- |
+| Image Upload | Server-API | HTTPS |
+| Image Editing | Pixlr API | RESTful API |
+| Social Media Sharing | Instagram API | OAuth |
+| Data Storage | Database Server | SQL over JDBC |
+
 
 <div style="page-break-after: always;"></div>
 
@@ -382,7 +396,7 @@ and input/output.
 
 </div>
 
-A short summary and explanation of the fundamental decisions and
+"A short summary and explanation of the fundamental decisions and
 solution strategies, that shape system architecture. It includes
 
 -   technology decisions
@@ -393,7 +407,12 @@ solution strategies, that shape system architecture. It includes
 -   decisions on how to achieve key quality goals
 
 -   relevant organizational decisions, e.g. selecting a development
-    process or delegating certain tasks to third parties.
+    process or delegating certain tasks to third parties."
+
+* Technology Decisions: Adoption of a microservices architecture to facilitate scalability and maintainability.
+* Top-level Decomposition: Use of APIs to interface with services like Pixlr for image editing and social media platforms for sharing.
+* Key Quality Goals Achievement: Emphasis on usability and security through a user-friendly interface and secure API gateways.
+* Organizational Decisions: Agile development process with continuous integration and deployment practices.
 
 <div class="formalpara-title">
 
@@ -401,9 +420,11 @@ solution strategies, that shape system architecture. It includes
 
 </div>
 
-These decisions form the cornerstones for your architecture. They are
+"These decisions form the cornerstones for your architecture. They are
 the foundation for many other detailed decisions or implementation
-rules.
+rules."
+
+These decisions are fundamental to creating an architecture that is resilient, scalable, and meets the user's needs and business objectives. They provide a framework within which all other architectural and design decisions are made.
 
 <div class="formalpara-title">
 
@@ -411,14 +432,16 @@ rules.
 
 </div>
 
-Keep the explanations of such key decisions short.
+"Keep the explanations of such key decisions short.
 
 Motivate what was decided and why it was decided that way, based upon
 problem statement, quality goals and key constraints. Refer to details
 in the following sections.
 
 See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
-documentation.
+documentation."
+
+The strategy is presented in a summarized format, highlighting the rationale behind each decision to give stakeholders a clear understanding of the chosen architectural path.
 
 <div style="page-break-after: always;"></div>
 
@@ -430,14 +453,16 @@ documentation.
 
 </div>
 
-The building block view shows the static decomposition of the system
+"The building block view shows the static decomposition of the system
 into building blocks (modules, components, subsystems, classes,
 interfaces, packages, libraries, frameworks, layers, partitions, tiers,
 functions, macros, operations, data structures, …) as well as their
 dependencies (relationships, associations, …)
 
 This view is mandatory for every architecture documentation. In analogy
-to a house this is the *floor plan*.
+to a house this is the *floor plan*."
+
+The PictShare system is structured into several key modules: User Interface, Application Server, Database, and External APIs (like Pixlr and social media integrations). Each module has distinct responsibilities and interacts with others to provide the app's functionalities.
 
 <div class="formalpara-title">
 
@@ -445,11 +470,14 @@ to a house this is the *floor plan*.
 
 </div>
 
-Maintain an overview of your source code by making its structure
+"Maintain an overview of your source code by making its structure
 understandable through abstraction.
 
 This allows you to communicate with your stakeholder on an abstract
-level without disclosing implementation details.
+level without disclosing implementation details."
+
+This modular architecture supports efficient development and maintenance, ensuring that each component can be updated or scaled independently. It aligns with the app's need for flexibility, scalability, and robust performance.
+
 
 <div class="formalpara-title">
 
