@@ -23,18 +23,13 @@ concepts. For documentation of your own system you use better the
 
 # Introduction and Goals
 
-" Describes the relevant requirements and the driving forces that software
+"Describes the relevant requirements and the driving forces that software
 architects and development team must consider. These include
-
--   underlying business goals,
-
--   essential features,
-
--   essential functional requirements,
-
--   quality goals for the architecture and
-
--   relevant stakeholders and their expectations "
+underlying business goals,
+essential features,
+essential functional requirements,
+quality goals for the architecture and
+relevant stakeholders and their expectations "
 
 * Business Goals: Engage a global community of photography enthusiasts through a feature-rich platform.
 * Essential Features: Advanced editing tools, customizable filters, and a robust user community with sharing capabilities.
