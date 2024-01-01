@@ -23,7 +23,7 @@ concepts. For documentation of your own system you use better the
 
 # Introduction and Goals
 
-Describes the relevant requirements and the driving forces that software
+" Describes the relevant requirements and the driving forces that software
 architects and development team must consider. These include
 
 -   underlying business goals,
@@ -34,7 +34,13 @@ architects and development team must consider. These include
 
 -   quality goals for the architecture and
 
--   relevant stakeholders and their expectations
+-   relevant stakeholders and their expectations "
+
+Business Goals: Engage a global community of photography enthusiasts through a feature-rich platform.
+Essential Features: Advanced editing tools, customizable filters, and a robust user community with sharing capabilities.
+Functional Requirements: User profile creation, image sharing with tagging, editing tools, and subscription options.
+Quality Goals: Performance, usability, and security of the architecture.
+Stakeholders: Marketing Manager, Project Manager, Lead Developer, UX/UI Designer, User Representative, and Photography Expert.
 
 ## Requirements Overview
 
