@@ -109,10 +109,12 @@ Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
 
 </div>
 
-You should know the quality goals of your most important stakeholders,
+"You should know the quality goals of your most important stakeholders,
 since they will influence fundamental architectural decisions. Make sure
 to be very concrete about these qualities, avoid buzzwords. If you as an
-architect do not know how the quality of your work will be judged…
+architect do not know how the quality of your work will be judged…"
+
+The PictShare app is designed to enhance the photographic experience by providing a dedicated platform for image sharing and editing, catering to the specific needs of photography enthusiasts and professionals.
 
 <div class="formalpara-title">
 
@@ -121,6 +123,12 @@ architect do not know how the quality of your work will be judged…
 </div>
 
 A table with quality goals and concrete scenarios, ordered by priorities
+
+* Performance: The app should handle high traffic, ensuring image uploads and edits are processed within seconds.
+
+* Usability: User interfaces should be intuitive, allowing new users to navigate and use advanced features with minimal instruction.
+
+* Security: Adhere to privacy regulations, ensuring user data and content are protected.
 
 ## Stakeholders
 
