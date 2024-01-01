@@ -663,7 +663,7 @@ Specifies the internal structure of *building block x.1*.
 
 </div>
 
-The runtime view describes concrete behavior and interactions of the
+"The runtime view describes concrete behavior and interactions of the
 system’s building blocks in form of scenarios from the following areas:
 
 -   important use cases or features: how do building blocks execute
@@ -679,7 +679,21 @@ system’s building blocks in form of scenarios from the following areas:
 Remark: The main criterion for the choice of possible scenarios
 (sequences, workflows) is their **architectural relevance**. It is
 **not** important to describe a large number of scenarios. You should
-rather document a representative selection.
+rather document a representative selection."
+
+Important Use Cases/Features and Execution:
+
+Image Upload and Edit: Involves user uploading an image, the system processing and storing it, followed by user selecting and applying filters.
+Image Sharing: User shares the edited image to social media via system's integration with platforms like Instagram.
+Interactions at Critical External Interfaces:
+
+The system interfaces with Pixlr API for image editing and with social media platforms for sharing, facilitating seamless user interaction.
+Operation and Administration (Launch, Start-up, Stop):
+
+Scenarios covering system initialization, user session management, and graceful shutdown procedures.
+Error and Exception Scenarios:
+
+Handling upload failures, editing errors, and connectivity issues with external services.
 
 <div class="formalpara-title">
 
@@ -687,11 +701,13 @@ rather document a representative selection.
 
 </div>
 
-You should understand how (instances of) building blocks of your system
+"You should understand how (instances of) building blocks of your system
 perform their job and communicate at runtime. You will mainly capture
 scenarios in your documentation to communicate your architecture to
 stakeholders that are less willing or able to read and understand the
-static models (building block view, deployment view).
+static models (building block view, deployment view)."
+
+Understanding these scenarios is vital for comprehending how the system operates in real-time, particularly focusing on user interaction and the system's response.
 
 <div class="formalpara-title">
 
@@ -718,14 +734,12 @@ documentation.
 
 ## \<Runtime Scenario 1>
 
--   *\<insert runtime diagram or textual description of the scenario>*
+-   ![7  SWARC Runtime 1](https://github.com/bonibv/swarc-material/assets/132003411/0277253c-cb8b-4c55-b5c2-96a4c4adf6b9)
 
--   *\<insert description of the notable aspects of the interactions
-    between the building block instances depicted in this diagram.>*
 
 ## \<Runtime Scenario 2>
+-   ![7  SWARC Runtime 2](https://github.com/bonibv/swarc-material/assets/132003411/b922063e-b944-43ad-80da-e70d7f3ace47)
 
-## …
 
 ## \<Runtime Scenario n>
 
