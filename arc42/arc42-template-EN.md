@@ -171,6 +171,15 @@ level of detail of your work and its results.
 Table with role names, person names, and their expectations with respect
 to the architecture and its documentation.
 
+Role/Name	Contact	Expectations
+Marketing Manager	Sarah Chen	Brand visibility and user base growth
+Project Manager	Michael Nguyen	Timely delivery and system stability
+Lead Developer	Ava Patel	Technical excellence and maintainability
+UX/UI Designer	Emily Wong	Aesthetic appeal and user-friendly design
+User Representative	Samir Singh	Community engagement and content richness
+Photography Expert	Lucas Rodriguez	High image quality and creative tools
+
+
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
 | *\<Role-1>* | *\<Contact-1>* | *\<Expectation-1>* |
