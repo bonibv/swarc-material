@@ -967,19 +967,28 @@ concepts](images/08-Crosscutting-Concepts-Structure-EN.png)
 See [Concepts](https://docs.arc42.org/section-8/) in the arc42
 documentation.
 
-## *\<Concept 1>*
+## *\<Domain Concepts>*
 
-*\<explanation>*
+*\<The domain model of PictShare encapsulates user-generated content, profile management, and interaction. It defines how users interact with the system, including uploading, editing, and sharing images, as well as following and engaging with other users.>*
 
-## *\<Concept 2>*
+## *\<User Experience (UX) Concepts>*
 
-*\<explanation>*
+*\<PictShare emphasizes a user-centered design approach, focusing on intuitive navigation, responsive interfaces, and accessible editing tools. This ensures a frictionless experience from image upload to final share.>*
 
-…
+## *\<Security Concepts>*
+*\<Security is a top priority, with measures such as two-factor authentication, secure image storage, and privacy controls for user profiles and content. Data encryption safeguards against unauthorized access.>*
 
-## *\<Concept n>*
+## *\<Architecture Patterns>*
+*\<PictShare may adopt a microservices architecture, where services are loosely coupled, independently deployable, and organized around business capabilities, enhancing the system's flexibility and scalability.>*
 
-*\<explanation>*
+## *\<Operational Concepts*
+*\<Cloud-based deployment ensures PictShare is scalable and reliable, with continuous monitoring, automated scaling, and disaster recovery processes in place to maintain service availability and performance.>*
+
+## *\<Development Concepts>*
+*\<Development follows best practices such as Agile methodologies, test-driven development, and continuous integration/continuous deployment pipelines, enhancing code quality and facilitating rapid iterations.>*
+
+
+
 
 <div style="page-break-after: always;"></div>
 
