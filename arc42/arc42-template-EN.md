@@ -1000,7 +1000,7 @@ documentation.
 
 </div>
 
-Important, expensive, large scale or risky architecture decisions
+"_Important, expensive, large scale or risky architecture decisions
 including rationales. With "decisions" we mean selecting one alternative
 based on given criteria.
 
@@ -1010,7 +1010,9 @@ document it locally (e.g. within the white box template of one building
 block).
 
 Avoid redundancy. Refer to section 4, where you already captured the
-most important decisions of your architecture.
+most important decisions of your architecture._"
+
+PictShare's architecture decisions include adopting a microservices architecture for scalability, using cloud-based storage for reliability, and implementing robust security measures for user data protection.
 
 <div class="formalpara-title">
 
@@ -1018,8 +1020,10 @@ most important decisions of your architecture.
 
 </div>
 
-Stakeholders of your system should be able to comprehend and retrace
-your decisions.
+"_Stakeholders of your system should be able to comprehend and retrace
+your decisions._"
+
+These decisions are driven by the need to manage a large user base, ensure high availability of the service, and maintain trust through secure operations.
 
 <div class="formalpara-title">
 
@@ -1039,6 +1043,14 @@ Various options:
 
 See [Architecture Decisions](https://docs.arc42.org/section-9/) in the
 arc42 documentation. There you will find links and examples about ADR.
+
+| Problem | Considered Alternatives | Decision |
+| ---------------- | ----------------- | -------- |
+| Microservices are too expensive | Use a monolith architecture | Hire more DevOps specialists
+ |
+| API Gateway Performance Bottlenecks | Implement load balancing and caching mechanisms within the API Gateway to reduce performance bottlenecks | Implement load balancing and caching mechanisms within the API Gateway to improve performance and alleviate bottlenecks |
+| Cross-Platform UI Performance Issues | Optimize the application code and UI components for each platform independently to achieve native-like performance, but still retain cross-platform code base | Optimize the application code and UI components for each platform independently to ensure that the cross-platform app delivers a smooth and responsive user experience |
+
 
 <div style="page-break-after: always;"></div>
 
