@@ -1085,6 +1085,9 @@ arc42 documentation.
 
 <div class="formalpara-title">
 
+![SWARC 5 Quality Tree](https://github.com/bonibv/swarc-material/assets/132003411/7e2b3b4a-30ba-4e9f-b4d9-422aab12c036)
+
+
 **Content**
 
 </div>
@@ -1125,7 +1128,7 @@ following section.
 **Contents**
 
 </div>
-
+" _
 Concretization of (sometimes vague or implicit) quality requirements
 using (quality) scenarios.
 
@@ -1142,7 +1145,19 @@ For architects, two kinds of scenarios are important:
 
 -   Change scenarios describe a modification of the system or of its
     immediate environment. Example: Additional functionality is
-    implemented or requirements for a quality attribute change.
+    implemented or requirements for a quality attribute change._ "
+
+
+* App Stability
+Scenario: The app should not crash more than twice a month, ensuring a consistent user experience. Simple monitoring will be set up to alert the team to issues.
+
+* User-Friendly Performance
+Scenario: The app should handle up to 10,000 users at a time without slowing down, with image uploads taking no more than 5 seconds, ensuring a smooth experience even during peak times.
+
+* Community Engagement
+Scenario: Users should return to the app weekly, with features like challenges designed to be easy and fun, encouraging regular engagement and helping to maintain a steady user community.
+
+
 
 <div class="formalpara-title">
 
@@ -1176,8 +1191,22 @@ Tabular or free form text.
 
 </div>
 
-A list of identified technical risks or technical debts, ordered by
+"_A list of identified technical risks or technical debts, ordered by
 priority
+_"
+
+1. User Experience Impact
+Cross-platform development offers cost-efficiency but accumulates technical debt for native features. Ongoing maintenance is essential for competitiveness.
+
+2. Performance and Reliability
+User Experience Impact
+Cross-platform development offers cost-efficiency but accumulates technical debt for native features. Ongoing maintenance is essential for competitiveness.
+
+3. Performance and Reliability
+Centralized API Gateway in microservices introduces risks, technical debt, and performance impacts. Optimization is essential to maintain stability.
+Security Vulnerabilities
+Cross-platform mobile development accumulates security-related technical debt, requiring ongoing security efforts to manage platform-specific vulnerabilities and ensure resilience to emerging threats, safeguarding user data against breaches and compromises.
+
 
 <div class="formalpara-title">
 
