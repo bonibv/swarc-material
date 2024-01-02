@@ -753,7 +753,7 @@ documentation.
 
 </div>
 
-The deployment view describes:
+"The deployment view describes:
 
 1.  technical infrastructure used to execute your system, with
     infrastructure elements like geographical locations, environments,
@@ -775,7 +775,7 @@ and chips.
 From a software perspective it is sufficient to capture only those
 elements of an infrastructure that are needed to show a deployment of
 your building blocks. Hardware architects can go beyond that and
-describe an infrastructure to any level of detail they need to capture.
+describe an infrastructure to any level of detail they need to capture."
 
 <div class="formalpara-title">
 
@@ -783,7 +783,7 @@ describe an infrastructure to any level of detail they need to capture.
 
 </div>
 
-Software does not run without hardware. This underlying infrastructure
+"Software does not run without hardware. This underlying infrastructure
 can and will influence a system and/or some cross-cutting concepts.
 Therefore, there is a need to know the infrastructure.
 
@@ -801,7 +801,10 @@ deployment diagrams:
     to show nodes and channels of the infrastructure.
 
 See [Deployment View](https://docs.arc42.org/section-7/) in the arc42
-documentation.
+documentation."
+
+![Screenshot 2024-01-02 at 16 01 48](https://github.com/bonibv/swarc-material/assets/132003411/7be9db5a-1b44-4928-a3d6-84ff8e57238a)
+
 
 ## Infrastructure Level 1
 
@@ -824,13 +827,18 @@ adapt this section of arc42 for all relevant environments.
 ***\<Overview Diagram>***
 
 Motivation  
-*\<explanation in text form>*
+*\<The deployment architecture is designed to ensure scalability, high availability, and seamless integration with external services, enhancing the user experience and offering robust data management and sharing capabilities.>*
 
 Quality and/or Performance Features  
-*\<explanation in text form>*
+*\<The Application Server is optimized for handling high traffic with load balancing.
+The Database Node ensures data integrity and supports quick retrieval for a responsive user experience.
+External APIs provide specialized services (image editing and social media integration) efficiently.>*
 
 Mapping of Building Blocks to Infrastructure  
-*\<description of the mapping>*
+*\<Application logic is hosted on the Application Server.
+Data is managed by the Database Node.
+Pixlr API handles image editing requests.
+Instagram API manages sharing functionalities.>*
 
 ## Infrastructure Level 2
 
@@ -840,18 +848,36 @@ elements from level 1.
 Please copy the structure from level 1 for each selected element.
 
 ### *\<Infrastructure Element 1>*
+![Screenshot 2024-01-02 at 16 05 11](https://github.com/bonibv/swarc-material/assets/132003411/4ef27583-17bf-48bb-ae53-65b28982fabc)
 
-*\<diagram + explanation>*
+*\<The Application Server is the central hub for processing user requests and delivering content. It hosts the PictShare application logic and ensures efficient handling of simultaneous user activities. Optimized for performance with load balancing to manage high traffic.>*
 
 ### *\<Infrastructure Element 2>*
+![Screenshot 2024-01-02 at 16 05 17](https://github.com/bonibv/swarc-material/assets/132003411/e56e6788-1f18-45cb-875b-91c00020550c)
 
-*\<diagram + explanation>*
+*\<Integrated for advanced image editing features directly in the PictShare app, allowing users to apply filters and edit images. Chosen for its wide range of functions and reliable service>*
 
 …
 
-### *\<Infrastructure Element n>*
+### *\<Infrastructure Element 3>*
+![Screenshot 2024-01-02 at 16 05 21](https://github.com/bonibv/swarc-material/assets/132003411/ee45c22c-dfaa-49d0-bf80-65b88e55247c)
 
-*\<diagram + explanation>*
+*\<Enables direct sharing of images to Instagram, expanding user reach and simplifying the sharing process. It's implemented with secure OAuth authentication to protect user data.>*
+
+### *\<Infrastructure Element 4>*
+![Screenshot 2024-01-02 at 16 05 27](https://github.com/bonibv/swarc-material/assets/132003411/132a284c-9db2-4fe4-88dd-92fe205acda2)
+
+*\<Stores all user data and image metadata. It's configured for high availability and is regularly backed up for data integrity and disaster recovery. Utilizes indexing for quick retrieval of records, enhancing the application's responsiveness.>*
+
+### *\<Infrastructure Element 5>*
+![Screenshot 2024-01-02 at 16 05 45](https://github.com/bonibv/swarc-material/assets/132003411/422146bc-2359-4b9f-855f-2d56e65756a4)
+
+*\<This facility serves as the central repository for PictShare's data storage, including user information and photo metadata. It is designed for optimal data retrieval and scalability, ensuring that as the user base grows, the system can scale accordingly. Security measures and regular backups are implemented to maintain data integrity and availability.>*
+
+### *\<Infrastructure Element 6>*
+![Screenshot 2024-01-02 at 16 06 11](https://github.com/bonibv/swarc-material/assets/132003411/56749a9a-662d-4251-9e69-95e36dae20df)
+
+*\<Represents various end-user devices such as smartphones and laptops. Ensures that PictShare is responsive and provides a seamless experience across all device types through adaptive design and cross-platform compatibility.>*
 
 <div style="page-break-after: always;"></div>
 
