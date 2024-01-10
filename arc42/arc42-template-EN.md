@@ -23,14 +23,6 @@ concepts. For documentation of your own system you use better the
 
 # Introduction and Goals
 
-"Describes the relevant requirements and the driving forces that software
-architects and development team must consider. These include
-underlying business goals,
-essential features,
-essential functional requirements,
-quality goals for the architecture and
-relevant stakeholders and their expectations "
-
 * Business Goals: Engage a global community of photography enthusiasts through a feature-rich platform.
 * Essential Features: Advanced editing tools, customizable filters, and a robust user community with sharing capabilities.
 * Functional Requirements: User profile creation, image sharing with tagging, editing tools, and subscription options.
@@ -45,12 +37,8 @@ relevant stakeholders and their expectations "
 
 </div>
 
-"Short description of the functional requirements, driving forces,
-extract (or abstract) of requirements. Link to (hopefully existing)
-requirements documents (with version number and information where to
-find it)."
 
-The functional requirements for PictShare, based on the BRD and presentations, can be summarized as follows:
+The functional requirements for PictShare can be summarized as follows:
 
 * User Profiles: Ability for users to create and manage personal profiles, connect with others, and curate collections of images.
 * Image Sharing: Feature to share images with the community, including tagging and social media integration.
@@ -61,28 +49,6 @@ The functional requirements for PictShare, based on the BRD and presentations, c
 
 <div class="formalpara-title">
 
-**Motivation**
-
-</div>
-
-From the point of view of the end users a system is created or modified
-to improve support of a business activity and/or improve the quality.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Short textual description, probably in tabular use-case format. If
-requirements documents exist this overview should refer to these
-documents.
-
-Keep these excerpts as short as possible. Balance readability of this
-document with potential redundancy w.r.t to requirements documents.
-
-See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
-arc42 documentation.
 
 ## Quality Goals
 
@@ -91,17 +57,11 @@ arc42 documentation.
 **Contents**
 
 </div>
+* Performance: The app should handle high traffic, ensuring image uploads and edits are processed within seconds.
 
-The top three (max five) quality goals for the architecture whose
-fulfillment is of highest importance to the major stakeholders. We
-really mean quality goals for the architecture. Don’t confuse them with
-project goals. They are not necessarily identical.
+* Usability: User interfaces should be intuitive, allowing new users to navigate and use advanced features with minimal instruction.
 
-Consider this overview of potential topics (based upon the ISO 25010
-standard):
-
-![Categories of Quality
-Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
+* Security: Adhere to privacy regulations, ensuring user data and content are protected.
 
 <div class="formalpara-title">
 
@@ -109,26 +69,9 @@ Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
 
 </div>
 
-"You should know the quality goals of your most important stakeholders,
-since they will influence fundamental architectural decisions. Make sure
-to be very concrete about these qualities, avoid buzzwords. If you as an
-architect do not know how the quality of your work will be judged…"
-
 The PictShare app is designed to enhance the photographic experience by providing a dedicated platform for image sharing and editing, catering to the specific needs of photography enthusiasts and professionals.
 
 <div class="formalpara-title">
-
-**Form**
-
-</div>
-
-A table with quality goals and concrete scenarios, ordered by priorities
-
-* Performance: The app should handle high traffic, ensuring image uploads and edits are processed within seconds.
-
-* Usability: User interfaces should be intuitive, allowing new users to navigate and use advanced features with minimal instruction.
-
-* Security: Adhere to privacy regulations, ensuring user data and content are protected.
 
 ## Stakeholders
 
@@ -137,39 +80,6 @@ A table with quality goals and concrete scenarios, ordered by priorities
 **Contents**
 
 </div>
-
-Explicit overview of stakeholders of the system, i.e. all person, roles
-or organizations that
-
--   should know the architecture
-
--   have to be convinced of the architecture
-
--   have to work with the architecture or with code
-
--   need the documentation of the architecture for their work
-
--   have to come up with decisions about the system or its development
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should know all parties involved in development of the system or
-affected by the system. Otherwise, you may get nasty surprises later in
-the development process. These stakeholders determine the extent and the
-level of detail of your work and its results.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Table with role names, person names, and their expectations with respect
-to the architecture and its documentation.
 
 Role/Name	Contact	Expectations
 Marketing Manager	Sarah Chen	Brand visibility and user base growth
@@ -190,7 +100,7 @@ Photography Expert	Lucas Rodriguez	High image quality and creative tools
 | *\<Photography Expert>* | *\<Lucas Rodriguez>* | *\<High image quality and creative tools>* |
 
 
-<div style="page-break-after: always;"></div>
+<div class="formalpara-title">
 
 # Architecture Constraints
 
@@ -200,41 +110,12 @@ Photography Expert	Lucas Rodriguez	High image quality and creative tools
 
 </div>
 
-Any requirement that constraints software architects in their freedom of
-design and implementation decisions or decision about the development
-process. These constraints sometimes go beyond individual systems and
-are valid for whole organizations and companies.
-
 * Security concerns: Security is a paramount concern, especially in microservices and mobile development. Architects must adhere to security constraints such as authentication, authorization, encryption, and protection against common security vulnerabilities when designing API Gateway patterns. These constraints limit design freedom to prioritize security.
 * Interoperability constraints: Cross-platform mobile development often involves multiple platforms (iOS, Android, web). Architects need to ensure that the API Gateway provides consistent and compatible interfaces for different client platforms. This can limit the choice of technologies and APIs used in the development process to ensure seamless interoperability.
 * Versioning and Compatibility Constraints: As systems evolve, architects need to maintain backward compatibility to avoid breaking existing clients. This constraint may limit the freedom to make drastic changes in the API or microservices without providing appropriate versioning and migration strategies
 * Regulatory and Compliance Constraints: Many industries have specific regulations and compliance requirements (e.g., GDPR). Architects must consider these constraints when designing API Gateway patterns for microservices. Compliance with these rules may necessitate data handling, auditing, and reporting features that could impact architectural choices.
 
 <div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Architects should know exactly where they are free in their design
-decisions and where they must adhere to constraints. Constraints must
-always be dealt with; they may be negotiable, though.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Simple tables of constraints with explanations. If needed you can
-subdivide them into technical constraints, organizational and political
-constraints and conventions (e.g. programming or versioning guidelines,
-documentation or naming conventions)
-
-See [Architecture Constraints](https://docs.arc42.org/section-2/) in the
-arc42 documentation.
-
-<div style="page-break-after: always;"></div>
 
 # System Scope and Context
 
@@ -244,14 +125,6 @@ arc42 documentation.
 
 </div>
 
-"System scope and context - as the name suggests - delimits your system
-(i.e. your scope) from all its communication partners (neighboring
-systems and users, i.e. the context of your system). It thereby
-specifies the external interfaces.
-
-If necessary, differentiate the business context (domain specific inputs
-and outputs) from the technical context (channels, protocols, hardware)."
-
 The PictShare system enables users to upload, edit, and share images. It interacts with external editing tools like Pixlr and social media platforms for sharing, delineating the system's scope. The business context involves user engagement and content distribution, while the technical context covers the APIs, protocols, and hardware necessary for image processing and data storage.
 
 <div class="formalpara-title">
@@ -260,26 +133,9 @@ The PictShare system enables users to upload, edit, and share images. It interac
 
 </div>
 
-"The domain interfaces and technical interfaces to communication partners
-are among your system’s most critical aspects. Make sure that you
-completely understand them."
-
 Understanding the interfaces with Pixlr for image editing and platforms like Instagram for sharing is critical, as they directly affect the user experience and the performance of the PictShare system.
 
 <div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   Context diagrams
-
--   Lists of communication partners and their interfaces.
-
-See [Context and Scope](https://docs.arc42.org/section-3/) in the arc42
-documentation.
 
 ## Business Context
 
@@ -289,38 +145,7 @@ documentation.
 
 </div>
 
-"Specification of **all** communication partners (users, IT-systems, …)
-with explanations of domain specific inputs and outputs or interfaces.
-Optionally you can add domain specific formats or communication
-protocols."
-
 PictShare interacts with users and various IT systems for its operations. Users provide image content and interact through the app. Payment services process subscriptions and purchases. Location services enhance user experience with geotagging. The marketing email system facilitates promotional communication. Data storage is managed by the hosting partner.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-"All stakeholders should understand which data are exchanged with the
-environment of the system."
-To ensure clarity among stakeholders regarding the flow of information and the system's integration with external services, which is essential for operational success and user satisfaction.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-"All kinds of diagrams that show the system as a black box and specify
-the domain interfaces to communication partners.
-
-Alternatively (or additionally) you can use a table. The title of the
-table is the name of your system, the three columns contain the name of
-the communication partner, the inputs, and the outputs.
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of external domain interfaces>**"
 
 | Communication Partner | Inputs from PictShare               | Outputs to PictShare              |
 |-----------------------|-------------------------------------|-----------------------------------|
@@ -330,8 +155,15 @@ the communication partner, the inputs, and the outputs.
 | Email Service         | Parameters for marketing emails     | Confirmation of email delivery    |
 | Hosting Partner       | Requests for data storage           | Access to stored user data        |
 
+<div class="formalpara-title">
 
+**Motivation**
 
+</div>
+
+To ensure clarity among stakeholders regarding the flow of information and the system's integration with external services, which is essential for operational success and user satisfaction.
+
+<div class="formalpara-title">
 
 ## Technical Context
 
@@ -341,42 +173,7 @@ the communication partner, the inputs, and the outputs.
 
 </div>
 
-"Technical interfaces (channels and transmission media) linking your
-system to its environment. In addition a mapping of domain specific
-input/output to the channels, i.e. an explanation which I/O uses which
-channel."
-
 The technical context of PictShare includes HTTPS for secure communication with user devices, RESTful API interactions with Pixlr for image editing, and OAuth for secure authorization with social media platforms. The system uses SQL over JDBC for database transactions to store user data and image metadata.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-"Many stakeholders make architectural decision based on the technical
-interfaces between the system and its context. Especially infrastructure
-or hardware designers decide these technical interfaces."
-
-These technical interfaces are crucial for ensuring the secure and efficient operation of PictShare. They are of particular interest to infrastructure architects and are fundamental to the system's ability to interact with its technical environment.
-
-Form:
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-"E.g. UML deployment diagram describing channels to neighboring systems,
-together with a mapping table showing the relationships between channels
-and input/output.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of technical interfaces>**
-
-**\<Mapping Input/Output to Channels>**"
 
 | Domain Interface | Technical Channel | Protocol |
 | ---------------- | ----------------- | -------- |
@@ -385,8 +182,18 @@ and input/output.
 | Social Media Sharing | Instagram API | OAuth |
 | Data Storage | Database Server | SQL over JDBC |
 
+<div class="formalpara-title">
 
-<div style="page-break-after: always;"></div>
+**Motivation**
+
+</div>
+
+These technical interfaces are crucial for ensuring the secure and efficient operation of PictShare. They are of particular interest to infrastructure architects and are fundamental to the system's ability to interact with its technical environment.
+
+Form:
+
+<div class="formalpara-title">
+
 
 # Solution Strategy
 
@@ -395,19 +202,6 @@ and input/output.
 **Contents**
 
 </div>
-
-"A short summary and explanation of the fundamental decisions and
-solution strategies, that shape system architecture. It includes
-
--   technology decisions
-
--   decisions about the top-level decomposition of the system, e.g.
-    usage of an architectural pattern or design pattern
-
--   decisions on how to achieve key quality goals
-
--   relevant organizational decisions, e.g. selecting a development
-    process or delegating certain tasks to third parties."
 
 * Technology Decisions: Adoption of a microservices architecture to facilitate scalability and maintainability.
 * Top-level Decomposition: Use of APIs to interface with services like Pixlr for image editing and social media platforms for sharing.
@@ -420,30 +214,9 @@ solution strategies, that shape system architecture. It includes
 
 </div>
 
-"These decisions form the cornerstones for your architecture. They are
-the foundation for many other detailed decisions or implementation
-rules."
-
 These decisions are fundamental to creating an architecture that is resilient, scalable, and meets the user's needs and business objectives. They provide a framework within which all other architectural and design decisions are made.
 
 <div class="formalpara-title">
-
-**Form**
-
-</div>
-
-"Keep the explanations of such key decisions short.
-
-Motivate what was decided and why it was decided that way, based upon
-problem statement, quality goals and key constraints. Refer to details
-in the following sections.
-
-See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
-documentation."
-
-The strategy is presented in a summarized format, highlighting the rationale behind each decision to give stakeholders a clear understanding of the chosen architectural path.
-
-<div style="page-break-after: always;"></div>
 
 # Building Block View
 
