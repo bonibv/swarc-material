@@ -339,89 +339,10 @@ Instagram API manages sharing functionalities.>*
 
 # Cross-cutting Concepts
 
-<div class="formalpara-title">
 
 **Content**
 
 </div>
-
-This section describes overall, principal regulations and solution ideas
-that are relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks. They can
-include many different topics, such as
-
--   models, especially domain models
-
--   architecture or design patterns
-
--   rules for using specific technology
-
--   principal, often technical decisions of an overarching (=
-    cross-cutting) nature
-
--   implementation rules
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Concepts form the basis for *conceptual integrity* (consistency,
-homogeneity) of the architecture. Thus, they are an important
-contribution to achieve inner qualities of your system.
-
-Some of these concepts cannot be assigned to individual building blocks,
-e.g. security or safety.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The form can be varied:
-
--   concept papers with any kind of structure
-
--   cross-cutting model excerpts or scenarios using notations of the
-    architecture views
-
--   sample implementations, especially for technical concepts
-
--   reference to typical usage of standard frameworks (e.g. using
-    Hibernate for object/relational mapping)
-
-<div class="formalpara-title">
-
-**Structure**
-
-</div>
-
-A potential (but not mandatory) structure for this section could be:
-
--   Domain concepts
-
--   User Experience concepts (UX)
-
--   Safety and security concepts
-
--   Architecture and design patterns
-
--   "Under-the-hood"
-
--   development concepts
-
--   operational concepts
-
-Note: it might be difficult to assign individual concepts to one
-specific topic on this list.
-
-![Possible topics for crosscutting
-concepts](images/08-Crosscutting-Concepts-Structure-EN.png)
-
-See [Concepts](https://docs.arc42.org/section-8/) in the arc42
-documentation.
 
 ## *\<Domain Concepts>*
 
@@ -443,9 +364,6 @@ documentation.
 ## *\<Development Concepts>*
 *\<Development follows best practices such as Agile methodologies, test-driven development, and continuous integration/continuous deployment pipelines, enhancing code quality and facilitating rapid iterations.>*
 
-
-
-
 <div style="page-break-after: always;"></div>
 
 # Architecture Decisions
@@ -456,49 +374,7 @@ documentation.
 
 </div>
 
-"_Important, expensive, large scale or risky architecture decisions
-including rationales. With "decisions" we mean selecting one alternative
-based on given criteria.
-
-Please use your judgement to decide whether an architectural decision
-should be documented here in this central section or whether you better
-document it locally (e.g. within the white box template of one building
-block).
-
-Avoid redundancy. Refer to section 4, where you already captured the
-most important decisions of your architecture._"
-
 PictShare's architecture decisions include adopting a microservices architecture for scalability, using cloud-based storage for reliability, and implementing robust security measures for user data protection.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-"_Stakeholders of your system should be able to comprehend and retrace
-your decisions._"
-
-These decisions are driven by the need to manage a large user base, ensure high availability of the service, and maintain trust through secure operations.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   ADR ([Documenting Architecture
-    Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions))
-    for every important decision
-
--   List or table, ordered by importance and consequences or:
-
--   more detailed in form of separate sections per decision
-
-See [Architecture Decisions](https://docs.arc42.org/section-9/) in the
-arc42 documentation. There you will find links and examples about ADR.
 
 | Problem | Considered Alternatives | Decision |
 | ---------------- | ----------------- | -------- |
@@ -506,36 +382,17 @@ arc42 documentation. There you will find links and examples about ADR.
 | API Gateway Performance Bottlenecks | Implement load balancing and caching mechanisms within the API Gateway to reduce performance bottlenecks | Implement load balancing and caching mechanisms within the API Gateway to improve performance and alleviate bottlenecks |
 | Cross-Platform UI Performance Issues | Optimize the application code and UI components for each platform independently to achieve native-like performance, but still retain cross-platform code base | Optimize the application code and UI components for each platform independently to ensure that the cross-platform app delivers a smooth and responsive user experience |
 
-
-<div style="page-break-after: always;"></div>
-
-# Quality Requirements
-
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-This section contains all quality requirements as quality tree with
-scenarios. The most important ones have already been described in
-section 1.2. (quality goals)
-
-Here you can also capture quality requirements with lesser priority,
-which will not create high risks when they are not fully achieved.
-
 <div class="formalpara-title">
 
 **Motivation**
 
 </div>
 
-Since quality requirements will have a lot of influence on architectural
-decisions you should know for every stakeholder what is really important
-to them, concrete and measurable.
+These decisions are driven by the need to manage a large user base, ensure high availability of the service, and maintain trust through secure operations.
 
-See [Quality Requirements](https://docs.arc42.org/section-10/) in the
-arc42 documentation.
+<div class="formalpara-title">
+
+# Quality Requirements
 
 ## Quality Tree
 
@@ -584,25 +441,6 @@ following section.
 **Contents**
 
 </div>
-" _
-Concretization of (sometimes vague or implicit) quality requirements
-using (quality) scenarios.
-
-These scenarios describe what should happen when a stimulus arrives at
-the system.
-
-For architects, two kinds of scenarios are important:
-
--   Usage scenarios (also called application scenarios or use case
-    scenarios) describe the system’s runtime reaction to a certain
-    stimulus. This also includes scenarios that describe the system’s
-    efficiency or performance. Example: The system reacts to a user’s
-    request within one second.
-
--   Change scenarios describe a modification of the system or of its
-    immediate environment. Example: Additional functionality is
-    implemented or requirements for a quality attribute change._ "
-
 
 * App Stability
 Scenario: The app should not crash more than twice a month, ensuring a consistent user experience. Simple monitoring will be set up to alert the team to issues.
@@ -613,31 +451,7 @@ Scenario: The app should handle up to 10,000 users at a time without slowing dow
 * Community Engagement
 Scenario: Users should return to the app weekly, with features like challenges designed to be easy and fun, encouraging regular engagement and helping to maintain a steady user community.
 
-
-
 <div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Scenarios make quality requirements concrete and allow to more easily
-measure or decide whether they are fulfilled.
-
-Especially when you want to assess your architecture using methods like
-ATAM you need to describe your quality goals (from section 1.2) more
-precisely down to a level of scenarios that can be discussed and
-evaluated.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Tabular or free form text.
-
-<div style="page-break-after: always;"></div>
 
 # Risks and Technical Debts
 
@@ -646,10 +460,6 @@ Tabular or free form text.
 **Contents**
 
 </div>
-
-"_A list of identified technical risks or technical debts, ordered by
-priority
-_"
 
 1. User Experience Impact
 Cross-platform development offers cost-efficiency but accumulates technical debt for native features. Ongoing maintenance is essential for competitiveness.
@@ -663,34 +473,7 @@ Centralized API Gateway in microservices introduces risks, technical debt, and p
 Security Vulnerabilities
 Cross-platform mobile development accumulates security-related technical debt, requiring ongoing security efforts to manage platform-specific vulnerabilities and ensure resilience to emerging threats, safeguarding user data against breaches and compromises.
 
-
 <div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-“Risk management is project management for grown-ups” (Tim Lister,
-Atlantic Systems Guild.)
-
-This should be your motto for systematic detection and evaluation of
-risks and technical debts in the architecture, which will be needed by
-management stakeholders (e.g. project managers, product owners) as part
-of the overall risk analysis and measurement planning.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-List of risks and/or technical debts, probably including suggested
-measures to minimize, mitigate or avoid risks or reduce technical debts.
-
-See [Risks and Technical Debt](https://docs.arc42.org/section-11/) in
-the arc42 documentation.
-
-<div style="page-break-after: always;"></div>
 
 # Glossary
 
