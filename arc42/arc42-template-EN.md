@@ -400,40 +400,6 @@ These decisions are driven by the need to manage a large user base, ensure high 
 
 ![SWARC 5 Quality Tree](https://github.com/bonibv/swarc-material/assets/132003411/7e2b3b4a-30ba-4e9f-b4d9-422aab12c036)
 
-
-**Content**
-
-</div>
-
-The quality tree (as defined in ATAM – Architecture Tradeoff Analysis
-Method) with quality/evaluation scenarios as leafs.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The tree structure with priorities provides an overview for a sometimes
-large number of quality requirements.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The quality tree is a high-level overview of the quality goals and
-requirements:
-
--   tree-like refinement of the term "quality". Use "quality" or
-    "usefulness" as a root
-
--   a mind map with quality categories as main branches
-
-In any case the tree should include links to the scenarios of the
-following section.
-
 ## Quality Scenarios
 
 <div class="formalpara-title">
