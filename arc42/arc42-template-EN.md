@@ -1,7 +1,3 @@
-arc# 
-
-**About arc42**
-
 </div>
 
 # **PictShare**
