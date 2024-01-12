@@ -226,6 +226,22 @@ These decisions are fundamental to creating an architecture that is resilient, s
 
 The PictShare system is structured into several key modules: User Interface, Application Server, Database, and External APIs (like Pixlr and social media integrations). Each module has distinct responsibilities and interacts with others to provide the app's functionalities.
 
+Descriptions of Building Blocks:
+
+**Application Server**
+_The Application Server is the central hub for processing user requests and delivering content. It hosts the PictShare application logic and ensures efficient handling of simultaneous user activities. Optimized for performance with load balancing to manage high traffic._
+
+**Pixlr Api**
+
+**Instagram Api**
+
+**Database Node**
+
+**Data Storage facility**
+
+**Users**
+
+
 **Level 1**
 
 ![Screenshot 2024-01-12 at 12 06 52](https://github.com/bonibv/swarc-material/assets/132003411/a127c436-a105-4f35-a0e3-b1a745ffa16f)
