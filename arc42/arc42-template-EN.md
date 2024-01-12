@@ -317,36 +317,9 @@ Understanding these scenarios is vital for comprehending how the system operates
 
 </div>
 
+![Screenshot 2024-01-12 at 12 22 12](https://github.com/bonibv/swarc-material/assets/132003411/71f522a9-7916-4ad2-bd7f-b0c5bdf18cb6)
 
 <div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-
-
-
-![Screenshot 2024-01-02 at 16 01 48](https://github.com/bonibv/swarc-material/assets/132003411/7be9db5a-1b44-4928-a3d6-84ff8e57238a)
-
-
-## Infrastructure Level 1
-
-Describe (usually in a combination of diagrams, tables, and text):
-
--   distribution of a system to multiple locations, environments,
-    computers, processors, .., as well as physical connections between
-    them
-
--   important justifications or motivations for this deployment
-    structure
-
--   quality and/or performance features of this infrastructure
-
--   mapping of software artifacts to elements of this infrastructure
-
-For multiple environments or alternative deployments please copy and
-adapt this section of arc42 for all relevant environments.
 
 ***\<Overview Diagram>***
 
@@ -363,47 +336,6 @@ Mapping of Building Blocks to Infrastructure
 Data is managed by the Database Node.
 Pixlr API handles image editing requests.
 Instagram API manages sharing functionalities.>*
-
-## Infrastructure Level 2
-
-Here you can include the internal structure of (some) infrastructure
-elements from level 1.
-
-Please copy the structure from level 1 for each selected element.
-
-### *\<Infrastructure Element 1>*
-![Screenshot 2024-01-02 at 16 05 11](https://github.com/bonibv/swarc-material/assets/132003411/4ef27583-17bf-48bb-ae53-65b28982fabc)
-
-*\<The Application Server is the central hub for processing user requests and delivering content. It hosts the PictShare application logic and ensures efficient handling of simultaneous user activities. Optimized for performance with load balancing to manage high traffic.>*
-
-### *\<Infrastructure Element 2>*
-![Screenshot 2024-01-02 at 16 05 17](https://github.com/bonibv/swarc-material/assets/132003411/e56e6788-1f18-45cb-875b-91c00020550c)
-
-*\<Integrated for advanced image editing features directly in the PictShare app, allowing users to apply filters and edit images. Chosen for its wide range of functions and reliable service>*
-
-…
-
-### *\<Infrastructure Element 3>*
-![Screenshot 2024-01-02 at 16 05 21](https://github.com/bonibv/swarc-material/assets/132003411/ee45c22c-dfaa-49d0-bf80-65b88e55247c)
-
-*\<Enables direct sharing of images to Instagram, expanding user reach and simplifying the sharing process. It's implemented with secure OAuth authentication to protect user data.>*
-
-### *\<Infrastructure Element 4>*
-![Screenshot 2024-01-02 at 16 05 27](https://github.com/bonibv/swarc-material/assets/132003411/132a284c-9db2-4fe4-88dd-92fe205acda2)
-
-*\<Stores all user data and image metadata. It's configured for high availability and is regularly backed up for data integrity and disaster recovery. Utilizes indexing for quick retrieval of records, enhancing the application's responsiveness.>*
-
-### *\<Infrastructure Element 5>*
-![Screenshot 2024-01-02 at 16 05 45](https://github.com/bonibv/swarc-material/assets/132003411/422146bc-2359-4b9f-855f-2d56e65756a4)
-
-*\<This facility serves as the central repository for PictShare's data storage, including user information and photo metadata. It is designed for optimal data retrieval and scalability, ensuring that as the user base grows, the system can scale accordingly. Security measures and regular backups are implemented to maintain data integrity and availability.>*
-
-### *\<Infrastructure Element 6>*
-![Screenshot 2024-01-02 at 16 06 11](https://github.com/bonibv/swarc-material/assets/132003411/56749a9a-662d-4251-9e69-95e36dae20df)
-
-*\<Represents various end-user devices such as smartphones and laptops. Ensures that PictShare is responsive and provides a seamless experience across all device types through adaptive design and cross-platform compatibility.>*
-
-<div style="page-break-after: always;"></div>
 
 # Cross-cutting Concepts
 
