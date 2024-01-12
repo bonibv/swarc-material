@@ -64,15 +64,6 @@ The PictShare app is designed to enhance the photographic experience by providin
 
 </div>
 
-Role/Name	Contact	Expectations
-Marketing Manager	Sarah Chen	Brand visibility and user base growth
-Project Manager	Michael Nguyen	Timely delivery and system stability
-Lead Developer	Ava Patel	Technical excellence and maintainability
-UX/UI Designer	Emily Wong	Aesthetic appeal and user-friendly design
-User Representative	Samir Singh	Community engagement and content richness
-Photography Expert	Lucas Rodriguez	High image quality and creative tools
-
-
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
 | *\<Marketing Manager>* | *\<Sarah Chen>* | *\<Brand visibility and user base growth>* |
@@ -81,7 +72,6 @@ Photography Expert	Lucas Rodriguez	High image quality and creative tools
 | *\<UX/UI Designer>* | *\<Emily Wong>* | *\<Aesthetic appeal and user-friendly design>* |
 | *\<User Representative>* | *\<Samir Singh>* | *\<Community engagement and content richness>* |
 | *\<Photography Expert>* | *\<Lucas Rodriguez>* | *\<High image quality and creative tools>* |
-
 
 <div class="formalpara-title">
 
