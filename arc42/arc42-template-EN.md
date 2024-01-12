@@ -240,9 +240,6 @@ _Enables direct sharing of images to Instagram, expanding user reach and simplif
 **Database Node**
 _Stores all user data and image metadata. It's configured for high availability and is regularly backed up for data integrity and disaster recovery. Utilizes indexing for quick retrieval of records, enhancing the application's responsiveness._
 
-**Data Storage facility**
-_This facility serves as the central repository for PictShare's data storage, including user information and photo metadata. It is designed for optimal data retrieval and scalability, ensuring that as the user base grows, the system can scale accordingly. Security measures and regular backups are implemented to maintain data integrity and availability._
-
 **Users**
 _Represents various end-user devices such as smartphones and laptops. Ensures that PictShare is responsive and provides a seamless experience across all device types through adaptive design and cross-platform compatibility._
 
