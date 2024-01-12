@@ -422,32 +422,17 @@ Cross-platform mobile development accumulates security-related technical debt, r
 
 </div>
 
-The most important domain and technical terms that your stakeholders use
-when discussing the system.
-
-You can also see the glossary as source for translations if you work in
-multi-language teams.
+| Term                 | Definition                                                                                          |
+|----------------------|-----------------------------------------------------------------------------------------------------|
+| HTTPS                | Secure protocol used by PictShare for encrypted communication over a computer network.               |
+| RESTful API          | Architectural style for an application program interface (API) that uses HTTP requests to access and use data. |
+| OAuth                | An open standard for access delegation commonly used to grant websites or applications access to information on other websites without giving them the passwords. |
+| SQL over JDBC        | A method for executing SQL statements using Java Database Connectivity for database interoperability in PictShare. |
+| Centralized API Gateway | A single entry point for all clients to manage API calls, routing them to the appropriate services within PictShare. |
+| Monolith Architecture | A software development model where PictShare is built as a single, indivisible unit.                 |
+| DevOps               | A set of practices that combines software development (Dev) and IT operations (Ops) aimed at shortening the development life cycle of PictShare and providing continuous delivery. |
+| Load Balancing       | The process of distributing network or application traffic across multiple servers in PictShare to ensure reliability and performance. |
+| Performance Bottlenecks | Points in a system where the performance is limited, PictShare identifies and addresses these to maintain efficiency. |
+| UI                   | User Interface - The space where interactions between humans and the PictShare application occur.    |
 
 <div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should clearly define your terms, so that all stakeholders
-
--   have an identical understanding of these terms
-
--   do not use synonyms and homonyms
-
-A table with columns \<Term> and \<Definition>.
-
-Potentially more columns in case you need translations.
-
-See [Glossary](https://docs.arc42.org/section-12/) in the arc42
-documentation.
-
-| Term        | Definition        |
-|-------------|-------------------|
-| *\<Term-1>* | *\<definition-1>* |
-| *\<Term-2>* | *\<definition-2>* |
