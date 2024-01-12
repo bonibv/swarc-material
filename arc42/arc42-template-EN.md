@@ -232,14 +232,19 @@ Descriptions of Building Blocks:
 _The Application Server is the central hub for processing user requests and delivering content. It hosts the PictShare application logic and ensures efficient handling of simultaneous user activities. Optimized for performance with load balancing to manage high traffic._
 
 **Pixlr Api**
+_Integrated for advanced image editing features directly in the PictShare app, allowing users to apply filters and edit images. Chosen for its wide range of functions and reliable service_
 
 **Instagram Api**
+_Enables direct sharing of images to Instagram, expanding user reach and simplifying the sharing process. It's implemented with secure OAuth authentication to protect user data._
 
 **Database Node**
+_Stores all user data and image metadata. It's configured for high availability and is regularly backed up for data integrity and disaster recovery. Utilizes indexing for quick retrieval of records, enhancing the application's responsiveness._
 
 **Data Storage facility**
+_This facility serves as the central repository for PictShare's data storage, including user information and photo metadata. It is designed for optimal data retrieval and scalability, ensuring that as the user base grows, the system can scale accordingly. Security measures and regular backups are implemented to maintain data integrity and availability._
 
 **Users**
+_Represents various end-user devices such as smartphones and laptops. Ensures that PictShare is responsive and provides a seamless experience across all device types through adaptive design and cross-platform compatibility._
 
 
 **Level 1**
