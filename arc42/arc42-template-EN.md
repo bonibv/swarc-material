@@ -40,6 +40,7 @@ The functional requirements for PictShare can be summarized as follows:
 **Contents**
 
 </div>
+
 * Performance: The app should handle high traffic, ensuring image uploads and edits are processed within seconds.
 
 * Usability: User interfaces should be intuitive, allowing new users to navigate and use advanced features with minimal instruction.
