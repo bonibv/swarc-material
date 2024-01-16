@@ -285,7 +285,7 @@ Understanding these scenarios is vital for comprehending how the system operates
 
 </div>
 
-<img width="881" alt="Screenshot 2024-01-16 at 19 27 41" src="https://github.com/bonibv/swarc-material/assets/132003411/38b5a134-e4ee-41ae-9fd1-6b8dcb186140">
+<img width="765" alt="Screenshot 2024-01-16 at 19 46 53" src="https://github.com/bonibv/swarc-material/assets/132003411/4eea2402-3f89-42fb-ad5c-39108ba16dc6">
 
 
 <div class="formalpara-title">
