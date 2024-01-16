@@ -252,12 +252,6 @@ Image Sharing: User shares the edited image to social media via system's integra
 Interactions at Critical External Interfaces:
 
 The system interfaces with Pixlr API for image editing and with social media platforms for sharing, facilitating seamless user interaction.
-Operation and Administration (Launch, Start-up, Stop):
-
-Scenarios covering system initialization, user session management, and graceful shutdown procedures.
-Error and Exception Scenarios:
-
-Handling upload failures, editing errors, and connectivity issues with external services.
 
 <div class="formalpara-title">
 
