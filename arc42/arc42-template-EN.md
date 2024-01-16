@@ -378,10 +378,10 @@ These decisions are driven by the need to manage a large user base, ensure high 
 </div>
 
 * App Stability
-Scenario: The app should not crash more than twice a month, ensuring a consistent user experience. Simple monitoring will be set up to alert the team to issues.
+Scenario: The app should not crash more, ensuring a consistent user experience.
 
-* User-Friendly Performance
-Scenario: The app should handle up to 10,000 users at a time without slowing down, with image uploads taking no more than 5 seconds, ensuring a smooth experience even during peak times.
+* Content Moderation:
+Scenario: Pictshare should implement an effective content moderation system to prevent the sharing of inappropriate or offensive material. This could involve automated filters, user reporting mechanisms, and a dedicated team for reviewing reported content.
 
 * Community Engagement
 Scenario: Users should return to the app weekly, with features like challenges designed to be easy and fun, encouraging regular engagement and helping to maintain a steady user community.
