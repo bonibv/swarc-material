@@ -378,7 +378,7 @@ These decisions are driven by the need to manage a large user base, ensure high 
 </div>
 
 * App Stability
-Scenario: The app should not crash more, ensuring a consistent user experience.
+Scenario: The app should not crash, ensuring a consistent user experience.
 
 * Content Moderation:
 Scenario: Pictshare should implement an effective content moderation system to prevent the sharing of inappropriate or offensive material. This could involve automated filters, user reporting mechanisms, and a dedicated team for reviewing reported content.
